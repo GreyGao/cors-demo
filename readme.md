@@ -22,7 +22,7 @@
 
 ```javascript
 response.setHeader('Access-Control-Allow-Origin','http://hikari.com:81')
-      response.setHeader('Access-Control-Allow-Methods','GET,POST,OPTIONS,PATCH,PUT')
+response.setHeader('Access-Control-Allow-Methods','GET,POST,OPTIONS,PATCH,PUT')
 ```
 
 即可为指定域名开放指定的METHODS权限。
