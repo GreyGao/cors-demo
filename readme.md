@@ -6,15 +6,15 @@
 
 2. 更改本地hosts文件，映射本地访问为
 
-  ```
+```
   127.0.0.1  qq.com
   127.0.0.1  hikari.com
   127.0.0.1  www.qq.com
-  ```
+```
 
-3. 访问"http://hikari.com:81/hikari"，发送Ajax请求"http://qq.com:81/qq.json"的数据；
+3. 访问"http://hikari.com:81/hikari" ，发送Ajax请求"http://qq.com:81/qq.json" 的数据；
 
-4. 即可实现"http://hikari.com:81/hikari"对"http://qq.com"的跨域请求。
+4. 即可实现"http://hikari.com:81/hikari" 对"http://qq.com" 的跨域请求。
 
 ## 实现方式
 
@@ -25,7 +25,7 @@ response.setHeader('Access-Control-Allow-Origin','http://hikari.com:81')
 response.setHeader('Access-Control-Allow-Methods','GET,POST,OPTIONS,PATCH,PUT')
 ```
 
-即可为指定域名开放指定的METHODS权限。
+即可为指定域名开放指定的GET, POST, OPTIONS等请求权限。
 
 ## 特别说明
 
